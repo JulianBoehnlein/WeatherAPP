@@ -1,0 +1,327 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+    --main-brand-color: #5585b5;
+    --secondary-brand-color: #53a8b6;
+    --text-color: #bbe4e9;
+    --secondary-text-color: #79c2d0;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #53a8b6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+.input{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100px;
+    width: 600px; 
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 50px;
+}
+
+form input[type="text"]{
+    background-color: transparent;
+    height: 100px;
+    width: 300px; 
+    border-radius: 50px;
+    border: transparent;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 50px;
+}
+
+form input[type="text"]::placeholder{
+    color: white;
+}
+
+form input[type="text"]:focus::placeholder{
+    color: transparent;
+    transition: color 0.1s ease-out;
+}
+
+form input[type="submit"]{
+    background-color: transparent;
+    border: transparent;
+    height: 100px;
+    width: 300px; 
+    border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+form input[type="submit"]:hover{
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    font-size: 1.03rem;
+    cursor: pointer;
+
+    transition: font-size 0.1s ease-in;
+}
+
+.box{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 800px;
+    width: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    backdrop-filter: blur(30px);
+}
+
+.error-box{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 500px;
+    width: 600px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.error-box img{
+    margin-top: 0px;
+    height: 400px;
+    margin-bottom: -10px;
+}
+
+/* .rain{
+    position: absolute;
+    width: 600px;
+    height: 900px;
+    z-index: -1;
+    left: 0;
+    margin-top: -800px;
+    opacity: 0.25;
+    animation: none;
+} */
+
+.content{
+    position: relative;
+    z-index: 1;
+    margin-top: 35px;
+}
+
+.city{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.temp{
+    margin-top: 0px;
+    font-size: 2.5rem;
+}
+
+
+img{
+    position: relative;
+    height: 350px;
+    margin-top: -35px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+i{
+    font-size: 1.7rem;
+}
+
+@media (min-width: 801px) and (max-width: 1200px){
+
+    body{
+        height: 100vh;
+    }
+    
+    .input{
+        height: 75px;
+        width: 400px;
+    }
+    
+    form input[type="text"]{
+        margin-left: 30px;
+        font-size: 0.7rem;
+        height: 75px;
+        width: 200px; 
+    }
+    form input[type="submit"]{
+        font-size: 0.7rem;
+        height: 75px;
+        width: 200px; 
+    }
+  
+    form input[type="submit"]:hover{
+        font-size: 0.75rem;
+    }
+    
+    .box{
+        height: 600px;
+        width: 400px;
+    }
+    
+    .error-box{
+        height: 350px;
+        width: 400px;
+    }
+    
+    .error-box img{
+        height: 300px;
+        margin-bottom: -40px;
+    }
+    
+    .errortxt{
+        font-size: 0.8rem;
+    }
+
+    .city{
+        font-size: 1rem;
+        font-weight: 800;
+    }
+    
+    .temp{
+        margin-top: 0px;
+        font-size: 1.5rem;
+    }
+    
+    .condition{
+        position: absolute;
+        font-size: 0.8rem;
+        margin-bottom: -30px;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    .high{
+        position: absolute;
+        font-size: 0.8rem;
+        margin-bottom: -75px;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+    }
+
+    img{
+        position: relative;
+        height: 250px;
+        margin-top: -35px;
+    }
+
+    i{
+        font-size: 1.2rem;
+    }
+    
+}
+
+@media(max-width: 800px){
+
+    body{
+        height: 100vh;
+    }
+    
+    
+    .input{
+        height: 50px;
+        width: 300px;
+    }
+    
+    form input[type="text"]{
+        margin-left: 25px;
+        font-size: 0.5rem;
+        height: 50px;
+        width: 150px; 
+    }
+    form input[type="submit"]{
+        font-size: 0.5rem;
+        height: 50px;
+        width: 150px; 
+    }
+  
+    form input[type="submit"]:hover{
+        font-size: 0.55rem;
+    }
+    
+    .box{
+        height: 400px;
+        width: 300px;
+    }
+    
+    .error-box{
+        height: 250px;
+        width: 300px;
+    }
+    
+    .error-box img{
+        height: 200px;
+        margin-bottom: -25px;
+    }
+    
+    .errortxt{
+        font-size: 0.6rem;
+    }
+
+    .city{
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    
+    .temp{
+        margin-top: 0px;
+        font-size: 1rem;
+    }
+
+    .condition{
+        font-size: 0.5rem;
+        margin-top: 40px;
+    }
+
+    .high{
+        font-size: 0.5rem;
+    }
+    
+    
+    img{
+        position: relative;
+        height: 150px;
+        margin-top: -35px;
+    }
+
+    i{
+        font-size: 1rem;
+    }
+    
+}
+
+
+
+
+
+
